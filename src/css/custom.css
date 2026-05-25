@@ -155,3 +155,28 @@ html {
   color: var(--ifm-color-primary);
   margin-bottom: 0.35rem;
 }
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.screenshot-grid figure {
+  margin: 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.screenshot-grid img {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.screenshot-grid figcaption {
+  padding: 0.65rem 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9rem;
+}
